@@ -1,0 +1,137 @@
+body {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+}
+
+section {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.1rem;
+}
+
+#avatar:hover {
+	transform: translate(10px 10px);
+}
+
+.avatar1 {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+
+	filter: blur(0.3px) saturate(1.1) brightness(1.5)
+		drop-shadow(5px 5px 3px #264653);
+}
+
+#nume {
+	text-align: center;
+	font-family: 'Comfortaa', cursive;
+	color: #264653;
+}
+
+#navbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#homePg {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#aboutPg p {
+	margin-top: 20%;
+}
+
+#projectsPg {
+	text-align: center;
+}
+
+#logoPz {
+	width: 30px;
+}
+
+#logoPzText {
+	text-decoration: none;
+	color: #264653;
+}
+
+#meme {
+	width: 150px;
+	animation: 2.5s ease 0s normal forwards 1 memeReveal;
+}
+
+.hide {
+	display: none;
+}
+
+button {
+	font-family: 'Comfortaa', cursive;
+	margin: 1em;
+	padding: 1em;
+	text-align: center;
+	background-color: #f1faee;
+	border: none;
+	color: #264653;
+	box-shadow: 10px 5px 10px #264653;
+	border-radius: 10px;
+	width: 100px;
+}
+button:hover {
+	background-color: #264653;
+	transform: translate(0px, -2.5px);
+	box-shadow: 10px 3px 10px #264653;
+	color: #f1faee;
+}
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* CREDITS TO GEOFF GRAHAM FOR THIS ANIMATION */
+
+.typewriter .animate {
+	overflow: hidden;
+	border-right: 0.15em solid orange;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: 0.15em;
+	animation: typing 1.5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes blink-caret {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: #264653;
+	}
+}
+
+@keyframes memeReveal {
+	0% {
+		opacity: 0;
+	}
+	66% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.4;
+	}
+}
